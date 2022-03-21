@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+
+
+html {
+     scroll-behavior: smooth; 
+    }
+
+body{
+    font-family: Poppins;
+    margin:5%;
+    padding:5%;
+    background: #1A1A40;
+}
+
+header{
+position:fixed; 
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: center;
+background-color:#121212;
+color:white; 
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+
+}
+
+h1{
+    color: white;
+}
+h2{
+  color: white;
+  text-decoration: underline;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #navbar li {
+    margin:1em;
+    list-style-type: none;
+  }
+  
+  #welcome-section, #projects {
+    min-height:60vh;
+    margin:0 auto;
+    padding:2rem 0;
+  }
+  
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #welcome-section > * {
+    margin: 1.5em 0em;
+  }
+  
+  #welcome-section h1 {
+    font-size: calc(1.75rem + 2vw);
+  }
+  
+  #welcome-section .about-me-list {
+    margin-left:1.25em;
+    font-size: var(--text-size);
+  }
+  
+  .about-me-list li:before {
+    /* content:"\003E \0020"; */
+   
+  }
+  
+  .social-media {
+    display: flex;
+    
+  }
+  
+  .social-media a {
+    font-size:1.8em;
+    margin-right:1em;
+  }
+  
+  .social-media a:last-child {
+    margin:0;
+  }
+
+  #projects {
+      display:flex; 
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  #projects section{
+      
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      align-items: center;
+  }
+
+  .tile{
+      background-color: #121212;
+      text-align: center;
+      flex-basis: 180px; 
+      border-radius: 1rem;
+      margin: 0.5rem;
+      height: 200px;
+      
+  }
+
+  .tile a {
+      color:white; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100%;
+      
+
+  }
+
+  /* .tile a:hover{
+      background-color: teal;
+      border-radius: 1rem;
+  } */
+
+  .tile:hover{
+    transform:scale(1.03);
+  background-color:#7A0BC0;
+  color:;
+  box-shadow:0 10px 30px -5px rgba(255,255,255,0.2);
+  transition: ease-in-out 0.5s;
+  }
+
+  .project-title {
+    font-size:1.125em;
+  }
+  
+  .project-intro {
+    display: none;
+  }
+  
+  
+  .tile:hover span  {
+    display: none
+  }
+  
+ .tile:hover:before {
+   
+    content: "Description of Project"; 
+  }
+
+  input{ 
+    border-radius: 10px;
+    height: 50px;
+    margin: 5px;
+    width:200px; 
+
+
+  }
+
+  textarea{
+    border-radius: 10px;
+    height: 100px;
+    margin: 5px;
+    width:300px; 
+
+  }
+
+  button{
+    margin: 5px;
+    border-radius: 2px; 
+  }
+  
+  .about-me-list{
+    color:white; 
+  }
